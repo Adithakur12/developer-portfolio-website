@@ -1,0 +1,31 @@
+<svg width="1200" height="750" viewBox="0 0 1200 750" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="750" rx="32" fill="#0F172A" />
+  <rect x="40" y="40" width="1120" height="120" rx="20" fill="#111827" stroke="#2563EB" stroke-width="3" />
+  <text x="80" y="90" fill="#F8FAFC" font-family="Inter, sans-serif" font-size="28" font-weight="700">AI Resume Analyzer</text>
+  <text x="80" y="130" fill="#94A3B8" font-family="Inter, sans-serif" font-size="16">Upload a resume to extract skills, experience, and match scores instantly.</text>
+
+  <rect x="60" y="180" width="420" height="460" rx="24" fill="#111827" stroke="#334155" stroke-width="2" />
+  <text x="90" y="230" fill="#E2E8F0" font-family="Inter, sans-serif" font-size="20" font-weight="600">Resume upload</text>
+  <rect x="90" y="260" width="340" height="64" rx="16" fill="#1E293B" />
+  <text x="110" y="305" fill="#94A3B8" font-family="Inter, sans-serif" font-size="16">Drag and drop or click to choose a file</text>
+  <rect x="90" y="350" width="340" height="44" rx="12" fill="#2563EB" />
+  <text x="130" y="380" fill="#F8FAFC" font-family="Inter, sans-serif" font-size="16" font-weight="600">Upload resume</text>
+
+  <rect x="520" y="180" width="620" height="220" rx="24" fill="#111827" stroke="#334155" stroke-width="2" />
+  <text x="550" y="230" fill="#E2E8F0" font-family="Inter, sans-serif" font-size="20" font-weight="600">Extracted skills</text>
+  <rect x="550" y="260" width="560" height="42" rx="12" fill="#1E293B" />
+  <text x="570" y="290" fill="#F8FAFC" font-family="Inter, sans-serif" font-size="16">Python</text>
+  <rect x="550" y="320" width="560" height="42" rx="12" fill="#1E293B" />
+  <text x="570" y="350" fill="#F8FAFC" font-family="Inter, sans-serif" font-size="16">Streamlit</text>
+  <rect x="550" y="380" width="560" height="42" rx="12" fill="#1E293B" />
+  <text x="570" y="410" fill="#F8FAFC" font-family="Inter, sans-serif" font-size="16">Natural Language Processing</text>
+
+  <rect x="520" y="420" width="620" height="220" rx="24" fill="#111827" stroke="#334155" stroke-width="2" />
+  <text x="550" y="470" fill="#E2E8F0" font-family="Inter, sans-serif" font-size="20" font-weight="600">Match score</text>
+  <rect x="550" y="510" width="560" height="32" rx="16" fill="#1E293B" />
+  <rect x="550" y="510" width="320" height="32" rx="16" fill="#22C55E" />
+  <text x="570" y="532" fill="#F8FAFC" font-family="Inter, sans-serif" font-size="14" font-weight="600">Applicant to job fit: 82%</text>
+  <text x="550" y="575" fill="#94A3B8" font-family="Inter, sans-serif" font-size="16">Detected core competencies from the resume and compared them to the job description.</text>
+
+  <text x="80" y="680" fill="#94A3B8" font-family="Inter, sans-serif" font-size="14">Screenshot mockup: Streamlit resume analyzer UI showing file upload, extracted skills output, and match score.</text>
+</svg>

@@ -7,11 +7,10 @@ import { Button } from "@/components/ui/button"
 import { siteConfig } from "@/lib/site-data"
 
 const navLinks = [
-  { href: "#about", label: "About" },
+  { href: "#projects", label: "Work" },
   { href: "#skills", label: "Skills" },
-  { href: "#projects", label: "Projects" },
+  { href: "#about", label: "Why I build" },
   { href: "#experience", label: "Experience" },
-  { href: "#education", label: "Education" },
   { href: "#contact", label: "Contact" },
 ]
 

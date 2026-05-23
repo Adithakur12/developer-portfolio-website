@@ -62,27 +62,36 @@ export function SkillsSection() {
               transition={{ duration: 0.6, delay: 0.4 + categoryIndex * 0.1 }}
               className="glass rounded-2xl p-6"
             >
-              <h3 className="gradient-text mb-6 text-xl font-bold">{category.title}</h3>
-              <div className="space-y-5">
+              <div className="mb-6">
+                <h3 className="gradient-text text-xl font-bold">{category.title}</h3>
+                <p className="mt-2 text-sm text-muted-foreground">{category.description}</p>
+              </div>
+              <div className="grid gap-4">
                 {category.skills.map((skill, skillIndex) => (
-                  <div key={skill.name}>
-                    <div className="mb-2 flex items-center justify-between">
-                      <span className="text-sm font-medium">{skill.name}</span>
-                      <span className="text-sm text-muted-foreground">{skill.level}%</span>
+                  <motion.div
+                    key={skill.name}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={isInView ? { opacity: 1, y: 0 } : {}}
+                    transition={{
+                      duration: 0.5,
+                      delay: 0.5 + categoryIndex * 0.15 + skillIndex * 0.05,
+                    }}
+                    className="rounded-3xl border border-white/10 bg-white/5 p-5 shadow-sm"
+                  >
+                    <div className="mb-3 flex items-center justify-between">
+                      <span className="text-base font-semibold text-slate-100">{skill.name}</span>
                     </div>
-                    <div className="h-2 overflow-hidden rounded-full bg-secondary">
-                      <motion.div
-                        className="h-full rounded-full bg-gradient-to-r from-primary to-accent"
-                        initial={{ width: 0 }}
-                        animate={isInView ? { width: `${skill.level}%` } : {}}
-                        transition={{
-                          duration: 1,
-                          delay: 0.6 + categoryIndex * 0.2 + skillIndex * 0.1,
-                          ease: "easeOut",
-                        }}
-                      />
+                    <div className="flex flex-wrap gap-2">
+                      {skill.evidence.map((tag) => (
+                        <span
+                          key={tag}
+                          className="rounded-full border border-white/10 bg-secondary/70 px-3 py-1 text-xs font-medium text-muted-foreground"
+                        >
+                          {tag}
+                        </span>
+                      ))}
                     </div>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </motion.div>

@@ -87,7 +87,7 @@ export function HeroSection() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary/60 opacity-75" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
               </span>
-              Open to opportunities
+              Now building work that is seen, used, and improved.
             </span>
           </motion.div>
 
@@ -102,23 +102,21 @@ export function HeroSection() {
             variants={itemVariants}
             className="font-display mt-4 text-4xl font-bold leading-[1.08] tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl"
           >
-            <span className="block text-foreground/90">Hi, I&apos;m</span>
-            <span className="gradient-text-animated mt-1 block">{siteConfig.name}</span>
+            I build dashboards and AI tools that help teams turn data into decisions.
           </motion.h1>
-
-          <motion.p
-            variants={itemVariants}
-            className="font-display mt-5 text-xl font-semibold tracking-tight text-foreground/80 sm:text-2xl md:text-3xl"
-          >
-            Building{" "}
-            <span className="gradient-text-animated">{siteConfig.tagline}</span>
-          </motion.p>
 
           <motion.p
             variants={itemVariants}
             className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg lg:mx-0"
           >
             {siteConfig.about}
+          </motion.p>
+
+          <motion.p
+            variants={itemVariants}
+            className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg lg:mx-0"
+          >
+            I build practical analytics tools and dashboards that make data easier to act on.
           </motion.p>
 
           <motion.div variants={itemVariants} className="mt-6 flex justify-center lg:justify-start">
@@ -156,10 +154,10 @@ export function HeroSection() {
             className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:justify-start"
           >
             <Button size="lg" className="glow-sm min-w-[160px] px-8" asChild>
-              <a href="#projects">View projects</a>
+              <a href="#projects">See my work</a>
             </Button>
             <Button size="lg" variant="outline" className="glass min-w-[160px] px-8" asChild>
-              <a href="#contact">Contact me</a>
+              <a href="#contact">Let's talk</a>
             </Button>
             <Button
               size="lg"
@@ -216,11 +214,11 @@ export function HeroSection() {
         className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2"
       >
         <motion.a
-          href="#about"
+          href="#projects"
           className="flex flex-col items-center gap-1 text-xs text-muted-foreground transition-colors hover:text-foreground"
           animate={{ y: [0, 6, 0] }}
           transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
-          aria-label="Scroll to about section"
+          aria-label="Scroll to projects section"
         >
           <span className="font-mono uppercase tracking-widest">Explore</span>
           <ArrowDown className="h-4 w-4" />

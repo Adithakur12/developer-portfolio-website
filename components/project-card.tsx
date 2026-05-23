@@ -107,6 +107,12 @@ export function ProjectCard({ project, index = 0, className }: ProjectCardProps)
           )}
         </div>
 
+        {project.caption && (
+          <div className="px-5 pt-4 text-xs text-muted-foreground">
+            {project.caption}
+          </div>
+        )}
+
         <motion.div variants={bodyVariants} className="relative flex flex-1 flex-col px-5">
           <div className="mb-3 flex items-start justify-between gap-3">
             <h3 className="font-display text-lg font-semibold tracking-tight text-foreground transition-colors group-hover/card:text-primary sm:text-xl">

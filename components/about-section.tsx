@@ -2,8 +2,8 @@
 
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
-import { MapPin, Languages } from "lucide-react"
-import { siteConfig, achievements, languages } from "@/lib/site-data"
+import { Languages } from "lucide-react"
+import { siteConfig, achievements } from "@/lib/site-data"
 
 export function AboutSection() {
   const ref = useRef<HTMLDivElement>(null)
@@ -19,60 +19,45 @@ export function AboutSection() {
           className="mb-16 text-center"
         >
           <span className="glass mb-4 inline-block rounded-full px-4 py-2 text-sm text-primary">
-            About Me
+            Why I build
           </span>
           <h2 className="font-display mb-4 text-3xl font-bold md:text-5xl">
-            Meet <span className="gradient-text">{siteConfig.name.split(" ")[0]}</span>
+            A few chapters behind the work
           </h2>
           <p className="mx-auto max-w-2xl text-muted-foreground">
-            Python developer & AI enthusiast building data-driven solutions
+            Stories that explain how curiosity turned into tools, dashboards, and internship impact.
           </p>
         </motion.div>
 
-        <div className="grid items-center gap-12 lg:grid-cols-2">
+        <div className="grid gap-12 lg:grid-cols-[1.05fr,0.95fr]">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative"
+            className="glass rounded-3xl p-8"
           >
-            <div className="relative mx-auto aspect-square max-w-md">
-              <motion.div
-                className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/20 to-accent/20 blur-2xl"
-                animate={{
-                  scale: [1, 1.05, 1],
-                  opacity: [0.5, 0.8, 0.5],
-                }}
-                transition={{ duration: 4, repeat: Infinity }}
-              />
-              <div className="glass relative flex h-full items-center justify-center rounded-3xl p-8">
-                <div className="text-center">
-                  <motion.div
-                    className="mx-auto mb-6 flex h-40 w-40 items-center justify-center rounded-full bg-gradient-to-br from-primary to-accent text-5xl font-bold text-primary-foreground"
-                    animate={{ rotateY: [0, 360] }}
-                    transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                  >
-                    {siteConfig.initials}
-                  </motion.div>
-                  <div className="space-y-2">
-                    <p className="text-2xl font-bold">{siteConfig.name}</p>
-                    <p className="text-sm text-muted-foreground">{siteConfig.role}</p>
-                    <p className="mt-2 flex items-center justify-center gap-1 text-sm text-muted-foreground">
-                      <MapPin className="h-4 w-4 text-primary" />
-                      {siteConfig.location}
-                    </p>
-                    <div className="mt-4 flex flex-wrap justify-center gap-2">
-                      {siteConfig.heroTechStack.slice(0, 3).map((tech) => (
-                        <span
-                          key={tech}
-                          className="rounded-full bg-primary/20 px-3 py-1 text-sm text-primary"
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
+            <span className="text-sm uppercase tracking-[0.2em] text-primary">
+              Personal story
+            </span>
+            <h3 className="mt-4 text-3xl font-bold text-foreground">
+              I got curious about AI while automating my college assignment tracker.
+            </h3>
+            <p className="mt-6 leading-relaxed text-muted-foreground">
+              {siteConfig.about}
+            </p>
+
+            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+              <div className="rounded-3xl bg-secondary/70 p-5">
+                <p className="text-sm font-semibold text-primary">A problem I solved recently</p>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  Built a Power BI dashboard for internship stakeholders to cut down manual Excel checks and share student insights faster.
+                </p>
+              </div>
+              <div className="rounded-3xl bg-secondary/70 p-5">
+                <p className="text-sm font-semibold text-primary">Currently learning</p>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  Fine-tuning LLM prompts for text analytics and connecting Python APIs with analytics apps.
+                </p>
               </div>
             </div>
           </motion.div>
@@ -83,42 +68,53 @@ export function AboutSection() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="space-y-6"
           >
-            <p className="text-lg leading-relaxed text-muted-foreground">{siteConfig.about}</p>
-
-            <div className="glass rounded-xl p-5">
-              <div className="mb-3 flex items-center gap-2 font-semibold text-foreground">
+            <div className="glass rounded-3xl p-8">
+              <div className="flex items-center gap-3">
                 <Languages className="h-5 w-5 text-primary" />
-                Languages
+                <div>
+                  <p className="text-sm uppercase tracking-[0.2em] text-primary">My workflow</p>
+                  <p className="mt-1 text-base font-semibold text-foreground">
+                    Tools and habits I rely on every day
+                  </p>
+                </div>
               </div>
-              <div className="flex flex-wrap gap-3">
-                {languages.map((lang) => (
+              <div className="mt-6 flex flex-wrap gap-2">
+                {[
+                  "Python",
+                  "Power BI",
+                  "MySQL",
+                  "Streamlit",
+                  "FastAPI",
+                  "LLM prompts",
+                ].map((tool) => (
                   <span
-                    key={lang.name}
-                    className="rounded-md border border-border/60 bg-secondary/40 px-3 py-1.5 text-sm"
+                    key={tool}
+                    className="rounded-full border border-white/10 bg-secondary/50 px-3 py-1 text-sm text-muted-foreground"
                   >
-                    <span className="font-medium text-foreground">{lang.name}</span>
-                    <span className="text-muted-foreground"> · {lang.level}</span>
+                    {tool}
                   </span>
                 ))}
               </div>
             </div>
 
-            <div className="grid grid-cols-1 gap-4 pt-2 sm:grid-cols-2">
-              {achievements.map((item, index) => (
-                <motion.div
-                  key={item.label}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={isInView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.4, delay: 0.6 + index * 0.1 }}
-                  className="glass rounded-xl p-4 transition-all duration-300 hover:glow-sm"
-                  whileHover={{ scale: 1.02 }}
-                >
-                  <p className="font-medium text-foreground">{item.label}</p>
-                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                    {item.value}
-                  </p>
-                </motion.div>
-              ))}
+            <div className="glass rounded-3xl p-8">
+              <p className="text-sm uppercase tracking-[0.2em] text-primary">What stands out</p>
+              <div className="mt-5 grid gap-3">
+                {achievements.map((item, index) => (
+                  <motion.div
+                    key={item.label}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={isInView ? { opacity: 1, y: 0 } : {}}
+                    transition={{ duration: 0.4, delay: 0.2 + index * 0.1 }}
+                    className="rounded-3xl bg-secondary/50 p-5"
+                  >
+                    <p className="font-semibold text-foreground">{item.label}</p>
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                      {item.value}
+                    </p>
+                  </motion.div>
+                ))}
+              </div>
             </div>
           </motion.div>
         </div>

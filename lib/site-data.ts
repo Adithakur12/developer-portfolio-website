@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Aditya Rajpoot",
   initials: "AR",
   role: "B.Tech Student | Python Developer | AI & Data Analytics Enthusiast",
-  tagline: "AI, data analytics & impactful tech solutions",
+  tagline: "Turning data curiosity into practical AI dashboards",
   location: "Noida, India",
   email: "adityathakur2618@gmail.com",
   phone: "+91 9412617999",
@@ -11,26 +11,26 @@ export const siteConfig = {
   github: "https://github.com/Adithakur12",
   resume: "/image.png/adityaresume12.pdf",
   about:
-    "B.Tech student skilled in Python, AI tools, web development, and data analytics with hands-on internship experience in dashboard development and graphic design. Passionate about building impactful tech solutions with strong problem-solving and fast learning ability.",
+    "I got curious about AI when I automated my college assignment tracker. Since then, I’ve built dashboards and Python tools that help teams move from raw data to clear decisions.",
   heroTechStack: ["Python", "Java", "Machine Learning", "Power BI"],
 } as const
 
 export const achievements = [
   {
     label: "Web Performance",
-    value: "Increased webpage speed by 40% using optimized code",
+    value: "Optimized image loading and removed unused CSS so pages feel faster and more responsive.",
   },
   {
     label: "Data Processing",
-    value: "Improved data processing speed by 25% via efficient algorithms",
+    value: "Rewrote a pandas pipeline with vectorized operations and reusable functions for more reliable data processing.",
   },
   {
     label: "Analytics Dashboard",
-    value: "Reduced report generation time by 30%",
+    value: "Automated report updates and streamlined dashboard refreshes to reduce manual effort.",
   },
   {
     label: "User Engagement",
-    value: "Led a project that increased user engagement by 20%",
+    value: "Built a dashboard the team referenced daily to track student performance and shared insights with the supervisor.",
   },
 ] as const
 
@@ -41,30 +41,69 @@ export const languages = [
 
 export const skillCategories = [
   {
-    title: "Languages & Frameworks",
+    title: "Daily Workflows",
+    description: "Skills I use regularly in internships and real projects.",
     skills: [
-      { name: "Java Programming", level: 88 },
-      { name: "Python Programming", level: 90 },
-      { name: "Spring Boot", level: 82 },
-      { name: "REST API", level: 85 },
+      {
+        name: "Python",
+        evidence: ["3+ projects", "Internship dashboard work", "Udemy certified"],
+      },
+      {
+        name: "MySQL",
+        evidence: ["Database-backed dashboards", "Power BI queries", "Data modeling"],
+      },
+      {
+        name: "Power BI",
+        evidence: ["ThoughtSol Infotech internship", "Interactive analytics", "Client-facing reports"],
+      },
+      {
+        name: "Java",
+        evidence: ["Scaler certified", "Spring Boot APIs", "Backend development"],
+      },
     ],
   },
   {
-    title: "Data & AI",
+    title: "Project Experience",
+    description: "Technologies delivered in academic work and portfolio applications.",
     skills: [
-      { name: "Machine Learning", level: 80 },
-      { name: "Gen AI", level: 78 },
-      { name: "LLM", level: 76 },
-      { name: "MySQL", level: 84 },
+      {
+        name: "Spring Boot",
+        evidence: ["REST API development", "Java backend services", "Certified training"],
+      },
+      {
+        name: "REST API",
+        evidence: ["Production-ready endpoints", "FastAPI & Spring Boot", "Integration workflows"],
+      },
+      {
+        name: "Streamlit",
+        evidence: ["Data dashboards", "Interactive analytics apps", "Python prototypes"],
+      },
+      {
+        name: "FastAPI",
+        evidence: ["Microservices", "Modern API design", "Python web backends"],
+      },
     ],
   },
   {
-    title: "Tools & Platforms",
+    title: "AI & Analytics",
+    description: "Emerging and applied AI skills driven by active learning and experimentation.",
     skills: [
-      { name: "Power BI", level: 86 },
-      { name: "Streamlit", level: 82 },
-      { name: "FastAPI", level: 78 },
-      { name: "NLP", level: 80 },
+      {
+        name: "Machine Learning",
+        evidence: ["Model building", "Predictive analytics", "Coursework projects"],
+      },
+      {
+        name: "Gen AI",
+        evidence: ["Prompt engineering", "LLM experimentation", "AI tooling"],
+      },
+      {
+        name: "LLM",
+        evidence: ["Language model tools", "NLP prototypes", "Research-driven ideas"],
+      },
+      {
+        name: "NLP",
+        evidence: ["Text analytics", "Resume parsing experiments", "Project-based learning"],
+      },
     ],
   },
 ] as const
@@ -89,9 +128,9 @@ export const experiences = [
     description:
       "Created visual identities and marketing materials that strengthened brand presence for client projects.",
     achievements: [
-      "Transformed client visions into stunning visual identities",
-      "Boosted brand engagement by 30% through innovative designs",
-      "Created compelling marketing materials that drove sales growth",
+      "Translated client briefs into polished visual identities and campaign assets.",
+      "Designed brand elements used across social media and outreach materials.",
+      "Delivered marketing collateral that supported client communication goals.",
     ],
     technologies: ["Graphic Design", "Branding", "Marketing"],
     current: false,
@@ -104,9 +143,9 @@ export const experiences = [
     description:
       "Built dynamic dashboards that enabled data-driven decisions and real-time performance tracking.",
     achievements: [
-      "Expert in crafting dynamic dashboards that drive data-driven decisions",
-      "Delivered real-time performance tracking, improving response times",
-      "Collaborated with cross-functional teams to align dashboard metrics",
+      "Built dashboard interfaces with interactive visuals for student performance review.",
+      "Delivered real-time metrics so the team could act on data faster.",
+      "Collaborated with cross-functional stakeholders to align metrics with business priorities.",
     ],
     technologies: ["Power BI", "Python", "MySQL", "Streamlit", "FastAPI"],
     current: false,

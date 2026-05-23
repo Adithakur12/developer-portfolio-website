@@ -7,8 +7,9 @@ export const projects: Project[] = [
     title: "AI Resume Analyzer",
     description:
       "An AI-powered resume screening tool using NLP with skill extraction and resume–job matching features.",
-    image:
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop",
+    image: "/project-screenshots/ai-resume-analyzer.svg",
+    caption:
+      "Streamlit UI mockup showing resume upload, extracted skills, and match score result.",
     tags: ["Python", "NLP", "Streamlit"],
     github: null,
     live: null,
@@ -18,8 +19,9 @@ export const projects: Project[] = [
     title: "Analytics Dashboard (DATAZEN)",
     description:
       "Interactive dashboards to visualize student performance and improve reporting and data analysis efficiency.",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+    image: "/project-screenshots/datazen-dashboard.svg",
+    caption:
+      "Dashboard mockup showing student performance charts and KPI summary from the analytics build.",
     tags: ["Power BI", "MySQL", "Python", "Streamlit", "FastAPI"],
     github: null,
     live: null,

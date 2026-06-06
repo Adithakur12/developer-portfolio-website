@@ -9,7 +9,7 @@ export const siteConfig = {
   phoneTel: "+919412617999",
   linkedin: "https://www.linkedin.com/in/aditya-rajput-09a8b333a",
   github: "https://github.com/Adithakur12",
-  resume: "/image.png/adityaresume12.pdf",
+  resume: "/image.png/Aditya_Rajpoot_Resume_2026.pdf",
   about:
     "I got curious about AI when I automated my college assignment tracker. Since then, I’ve built dashboards and Python tools that help teams move from raw data to clear decisions.",
   heroTechStack: ["Python", "Java", "Machine Learning", "Power BI"],

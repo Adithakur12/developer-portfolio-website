@@ -158,7 +158,7 @@ export function ContactSection() {
               className="pt-4"
             >
               <Button size="lg" className="glow w-full sm:w-auto" asChild>
-                <a href={siteConfig.resume} download="Aditya_Rajpoot_Resume.pdf">
+                <a href={siteConfig.resume} download="Aditya_Rajpoot_Resume_2026.pdf">
                   <Download className="mr-2 h-5 w-5" />
                   Download Resume
                 </a>

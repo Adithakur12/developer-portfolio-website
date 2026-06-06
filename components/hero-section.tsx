@@ -167,7 +167,7 @@ export function HeroSection() {
             >
               <a
                 href={siteConfig.resume}
-                download="Aditya_Rajpoot_Resume.pdf"
+                download="Aditya_Rajpoot_Resume_2026.pdf"
                 className="inline-flex items-center gap-2"
               >
                 <FileText className="h-4 w-4" />
